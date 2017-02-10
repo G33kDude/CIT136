@@ -1,0 +1,9 @@
+Candy Type     Candy Color        Price     # In Stock
+Lollipop       Red            $    0.75            100
+Lollipop       Green          $    0.76            200
+Gumdrop        Yellow         $    0.05           1500
+Gummy          Pink           $    0.10            500
+
+
+
+The total cost to buy 10.00% of the candy would be $35.20
