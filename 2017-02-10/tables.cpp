@@ -130,8 +130,9 @@ int main()
 	//
 	//
 	// We will need a variable for accessing each of the files we want to use.
-	// Variables used to access files are declared using the data type called
-	// "fstream", which is short for "file stream".
+	// Variables used to access files are declared using the data types called
+	// "ifstream", which is short for "input file stream", and "ofstream",
+	// which is short for "output file stream".
 	//
 	// For our file access variable names we will use fin and fout, because
 	// that is what is preferred by Professor Morgan. It is not required to
@@ -147,8 +148,8 @@ int main()
 	//     they don't have anything to do with what the variables are actually
 	//     used for.
 
-	fstream fin;
-	fstream fout;
+	ifstream fin;
+	ofstream fout;
 
 
 	// --- Open Input and Output Files ---
