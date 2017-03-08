@@ -30,8 +30,8 @@ const int MAXLOOPS = 1000000;
 int main()
 {
 	// Declare Variables
-	int totaltocheck; // How many numbers should we check for happines, total
-	int totalhappy = 0; // How many of those numbers were found to be happy
+	int total_to_check; // How many numbers should we check for happines, total
+	int total_happy = 0; // How many of those numbers were found to be happy
 	int number; // The number currently being cycled to check for happiness
 	int digit; // Holder for the digit being pulled from the number
 	int sum = 0; // Sum for the squares of the digits of number
@@ -51,15 +51,15 @@ int main()
 
 	// Prompt for input
 	cout << "Please enter how many numbers to be checked for happiness: ";
-	cin >> totaltocheck;
+	cin >> total_to_check;
 	cout << endl;
 
 
 	// Check for happy numbers
 
-	// starting at 1 (int i = 1), repeat up to "totaltocheck" times, 
+	// starting at 1 (int i = 1), repeat up to "total_to_check" times, 
 	// and increase "i" by 1 each time.
-	for (int i = 1; i <= totaltocheck; i++)
+	for (int i = 1; i <= total_to_check; i++)
 	{
 
 		// Check if the number is happy, or assume it isn't if it doesn't
@@ -89,18 +89,22 @@ int main()
 
 		if (number == 1) // If the starting number ended up happy
 		{
-			totalhappy += 1;
-			cout << totalhappy << "/" << i << " Happy number :D" << endl;
+			total_happy += 1;
+			cout << total_happy << "/" << i << " Happy number :D" << endl;
 		}
 		else
 		{
-			cout << totalhappy << "/" << i << " Unhappy number D:" << endl;
+			cout << total_happy << "/" << i << " Unhappy number D:" << endl;
 		}
 	}
-	
-	cout << endl;
-	cout << "A total of " << totalhappy << " happy numbers between ";
-	cout << "1 and " << totaltocheck << " were found." << endl << endl;
 
+
+	// Output the results
+	cout << endl;
+	cout << "A total of " << total_happy << " happy numbers between ";
+	cout << "1 and " << total_to_check << " were found." << endl << endl;
+
+
+	// End of main function
 	return 0;
 }
